@@ -5,10 +5,10 @@
 
 pkgname=pcsxr
 pkgver=1.9.95
-pkgrel=2
+pkgrel=3
 pkgdesc="A Sony PlayStation (PSX) emulator based on the PCSX-df project"
 arch=("i686" "x86_64")
-url="http://${pkgname}.codeplex.com"
+url="https://pkgs.org/download/${pkgname}/"
 license=("GPL")
 depends=("gtk3" "libarchive" "libcdio" "libnsl" "libxv" "sdl2")
 makedepends=("cmake" "intltool" "mesa" "nasm" "valgrind")
@@ -43,8 +43,8 @@ build() {
 
   export CC="gcc"
   export CXX="g++"
-  export CFLAGS+=" -fcommon -I/usr/include/harfbuzz"
-  export CXXFLAGS+=" -I/usr/include/harfbuzz"
+  export CFLAGS+=" -fcommon -I/usr/include/harfbuzz -Wno-implicit-function-declaration -Wno-int-conversion"
+  export CXXFLAGS+=" -I/usr/include/harfbuzz -Wno-implicit-function-declaration -Wno-int-conversion"
   export PKG_CONFIG_PATH='/usr/lib/pkgconfig'
 
   autoreconf -f -i

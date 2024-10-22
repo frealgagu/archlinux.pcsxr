@@ -1,8 +1,8 @@
 pkgbase = pcsxr
 	pkgdesc = A Sony PlayStation (PSX) emulator based on the PCSX-df project
 	pkgver = 1.9.95
-	pkgrel = 2
-	url = http://pcsxr.codeplex.com
+	pkgrel = 3
+	url = https://pkgs.org/download/pcsxr/
 	arch = i686
 	arch = x86_64
 	license = GPL
@@ -30,4 +30,3 @@ pkgbase = pcsxr
 	sha256sums = c4c08c7ff55045ac0fb00179e92ada201eef024db0f144970fc21544de877cf9
 
 pkgname = pcsxr
-
